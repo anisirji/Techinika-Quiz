@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
+
+
+ <!-- animation -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"></script>
+<title>Quiz App</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<div>
+    <!--Changes-->
+    <div class="ContainerBanner animate__animated animate__rubberBand"> 
+    <img src="bann.png" alt="" height="200" width="500">
+    </div>
+    <div class="ContainerBanner1 animate__animated animate__bounce"> 
+    <img src="bann2.png" alt="" height="300" width="500">
+    </div>
+    <!--Changes ends-->
+
+    <div class="start_btn cssanimation fadeIn"><button><span class="cssanimation leFadeIn sequence"> Start Now </span></button></div>
+    <div class="info_box">
+        
+        <!--Changes-->
+        <div class="ContainerBannerClub animate__animated animate__bounce"> 
+            <img src="club.png" alt="" height="55" width="60">
+        </div>
+        <!--Changes end-->
+
+        <div class="info-title"><span>Some rules of the Quiz are:-</span></div>
+        <div class="info-list">
+            <div class="info">1.you will have <span>30 seconds</span> per question.</div>
+            <div class="info">2.Once you select the answer it can't be changed.</div>
+            <div class="info">3.You can't select the options once the time goes off.</div>
+            <div class="info">4.You can't exit from the Quiz while yu are playing.</div>
+            <div class="info">5.you will get the points on the basis of correct answers.</div>
+            <input class="pdetailsInput" placeholder="Enter Your Name" type="text" name="" id="pName">
+            <input class="pdetailsInput" placeholder="University Name" type="text" name="" id="pUName">
+            <input class="pdetailsInput" placeholder="Enrollment No (AJU/200801)" type="text" name="" id="pEnroll">
+            <p id="warning"style="color:red" class="hidden">Please Enter The Details</p>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz box -->
+
+    <div class="quiz_box">
+        <header>
+            <div class="title">Technika Quiz</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+
+        <section>
+
+            <div class="que_text">
+                <!-- <span>Which type of JavaScript language is ___</span> -->
+            </div>
+
+            <div class="option_list">
+                <!-- <div class="option incorrect disable">Object-Oriented
+                    <div class="icon cross">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="option correct">Object-Based
+                    <div class="icon tick">
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+                <div class="option disable">Assembly-language</div>
+                <div class="option disable">High-level</div> -->
+            </div>
+        </section>
+
+        <footer>
+            <div class="total_que">
+                <!-- <span>
+                    <p>1</p>of<p>20</p>Questions
+                </span> -->
+            </div>
+            <button class="next_btn show animate__animated animate__bounceIn">Next Question</button>
+        </footer>
+    </div>
+
+
+    <!-- resultBox   -->
+
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+
+        <div class="complete_text">You have completed the Quiz</div>
+
+        <div class="score_text">
+            <!-- <span>and nice you got 18 out of 20</span> -->
+        </div>
+
+        <!-- <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="Quit animate__animated animate__bounceInRight">Quit Quiz</button>
+        </div> -->
+    </div> 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/question.js"></script>
+
+
+</body>
+
+</html>
