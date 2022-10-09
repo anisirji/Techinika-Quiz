@@ -260,42 +260,6 @@ section .option_list .option:hover {
     border: 1px solid #b8daff;
 }
 
-section .option_list .option .icon {
-    width: 26px;
-    height: 20px;
-    border: 2px solid transparent;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 13px;
-    pointer-events: none;
-    transition: all 0.3s ease;
-    line-height: 24px;
-
-}
-
-section .option_list .option .icon.tick {
-    color: green;
-    background: #d4edda;
-    border-color: #23903c;
-}
-
-section .option_list .option .icon.cross {
-    color: red;
-    background: #f8d7da;
-    border-color: #a42834;
-}
-
-section .option_list .option.correct {
-    color: #155724;
-    background: #d4edda;
-    border: 1px solid white;
-}
-
-section .option_list .option.incorrect {
-    color: red;
-    background: #f8d7da;
-    border: 1px solid white;
-}
 
 
 section .option_list .option.disabled {
@@ -423,4 +387,9 @@ footer button.show {
 
 .hidden{
     display: none;
+}
+
+.selected{
+    background-color: #007bff;
+    color: red;
 }
