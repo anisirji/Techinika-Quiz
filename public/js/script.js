@@ -143,13 +143,13 @@ function showQuestion(index) {
   let option_tag =
     '<div class="option">' +
     questions[index].options[0] +
-    "<span></span></div>," +
+    "<span></span></div>" +
     '<div class="option">' +
     questions[index].options[1] +
-    "<span></span></div>," +
+    "<span></span></div>" +
     '<div class="option">' +
     questions[index].options[2] +
-    "<span></span></div>," +
+    "<span></span></div>" +
     '<div class="option">' +
     questions[index].options[3] +
     "<span></span></div>";
