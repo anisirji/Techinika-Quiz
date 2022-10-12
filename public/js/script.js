@@ -85,11 +85,15 @@ next_btn.onclick = () => {
       next_btn.innerHTML = "Submit";
     }
   } else {
+    const date = new Date();
+    const time = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}:${date.getMilliseconds()}`;
     const data = {
       name: pName.value,
       university: pUName.value,
-      enrollment: pEnroll.value,
+      phoneNo: pEnroll.value, //Phone number hai ye
       pAns: participantAns,
+      date: `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`,
+      time: time,
     };
     //posting data to server
     postdata(data);
